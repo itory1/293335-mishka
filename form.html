@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>«Мишка» — милые штуки ручной работы</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <a class="page-header__logo-link" href="#">
+                <img class="page-header__logo" src="http://placehold.it/150x100" width="" height="" alt="Магазин «Мишка»">
+            </a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item">
+                            <a href="">Каталог товаров</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="">Вязание на заказ</a>
+                        </li>
+                    </ul>
+                    <div class="main-nav__list user-block">
+                        <div class="user-block__item">
+                            <a class="user-block__search" href="#">Поиск по сайту</a>
+                        </div>
+                         <div class="user-block__item">
+                            <a class="user-block__basket" href="#">Корзина: пока пуста</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <h1>Вязание на заказ</h1>
+            </div>
+        </header>
+        <main class="page-main">
+            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+            </p>
+            <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="order-form__controls type">
+                    <label class="order-form__label type" for="interior">Тип</label>
+                    <label class="order-form__label type" for="interior">Аксессуар для интерьера</label>
+                    <input class="order-form__input type" type="radio" name="type" id="interior" checked="">
+                    <label class="order-form__label type" for="toy">Детская игрушка</label>
+                    <input class="order-form__input type" type="radio" name="type" id="toy">
+                </div>
+                <div class="order-form__controls color">
+                    <label class="order-form__label color" for="white">Цвет</label>
+                    <label class="order-form__label color" for="white">Белый</label>
+                    <input class="order-form__input color" type="checkbox" name="color" id="white" checked="">
+                    <label class="order-form__label color" for="grey">Серый</label>
+                    <input class="order-form__input color" type="checkbox" name="color" id="grey" checked="">
+                    <label class="order-form__label color" for="tif">«Тиффани»</label>
+                    <input class="order-form__input color" type="checkbox" name="color" id="tif">
+                    <label class="order-form__label color" for="black">Черный</label>
+                    <input class="order-form__input color" type="checkbox" name="color" id="black">
+                    <label class="order-form__label color" for="pink">Розовый</label>
+                    <input class="order-form__input color" type="checkbox" name="color" id="pink">
+                    <label class="order-form__label color" for="orange">Оранжевый</label>
+                    <input class="order-form__input color" type="checkbox" name="color" id="orange">
+                </div>
+                 <div class="order-form__controls fio">
+                    <label class="order-form__label fio" for="surname">ФИО</label>
+                    <label class="order-form__label fio" for="surname">Фамилия</label>
+                    <input class="order-form__input fio" type="text" name="surname" id="surname">
+                    <label class="order-form__label fio" for="name">Имя</label>
+                    <input class="order-form__input fio" type="text" name="name" id="name">
+                    <label class="order-form__label fio" for="fathername">Отчество</label>
+                    <input class="order-form__input fio" type="text" name="fathername" id="fathername">
+                </div>
+                <div class="order-form__controls tel">
+                    <label class="order-form__label tel" for="tel">Тел</label>
+                    <input type="tel" name="phone" value="" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                </div>
+                <div class="order-form__controls email">
+                    <label class="order-form__label email" for="email">E-mail</label>
+                    <input type="text" name="phone" value="" id="email" placeholder="Ваш email*">
+                </div>
+                <div class="order-form__controls additional">
+                    <label class="order-form__label additional" for="additional">Доп</label>
+                    <input type="text" name="phone" value="" id="additional" placeholder="Опишите все ваши пожелания к заказу">
+                </div>
+                <p>*Поля обязательны к заполнению</p>
+                <a class="order-form__button button">Отправить заказ</a>
+            </form>
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+                <div class="page-footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright copyright">
+                    <b class="copyright__text">Разработано:</b>
+                    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
