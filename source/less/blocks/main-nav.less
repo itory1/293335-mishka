@@ -1,8 +1,53 @@
 /* stylelint-disable */
 .main-nav {
     outline: 1px dotted red;
+    width: 320px;
+    margin: auto;
+    width: 320px;
 }
 
 .main-nav__list {
+    margin: 0;
+    padding: 0;
+
     list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 670px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  width: 320px;
+}
+
+.user-list {
+  width: 350px;
+}
+}
+
+@media (min-width: @desktop-width) {
+
+
+.main-nav__wrapper {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  width: 430px;
+}
+
+.user-list {
+  width: 350px;
+}
 }
