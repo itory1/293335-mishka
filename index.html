@@ -2,17 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>«Мишка» — милые штуки ручной работы</title>
         <link href="source/css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
-            <a class="page-header__logo-link" href="#">
-                <img class="page-header__logo" src="http://placehold.it/150x100" width="" height="" alt="Магазин «Мишка»">
-            </a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button">Открыть меню</button>
                 <div class="main-nav__wrapper">
+                    <a class="page-header__logo-link" href="#">
+                <img class="page-header__logo" src="http://placehold.it/150x100" width="" height="" alt="Магазин «Мишка»">
+                    </a>
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item">
                             <a href="">Каталог товаров</a>
@@ -20,14 +21,14 @@
                         <li class="site-list__item">
                             <a href="">Вязание на заказ</a>
                         </li>
-                         <li class="site-list__item">
+                        <li class="site-list__item site-list__item--mobile-hidden">
                             <a href="">Новые поступления</a>
                         </li>
-                        <li class="site-list__item">
+                        <li class="site-list__item site-list__item--mobile-hidden">
                             <a href="">Распродажа</a>
                         </li>
                     </ul>
-                    <ul class="main-nav__list user-block">
+                    <ul class="main-nav__list user-list">
                         <li class="user-list__item">
                             <a class="user-list__search" href="#">Поиск по сайту</a>
                         </li>
@@ -35,6 +36,7 @@
                             <a class="user-list__basket" href="#">Корзина: пока пуста</a>
                         </li>
                     </ul>
+                    <p class="main-nav__delivery-text">Бесплатная доставка по России</p>
                 </div>
             </nav>
         </header>

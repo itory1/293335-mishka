@@ -1,0 +1,28 @@
+.tablet-width(@rules) {
+    @media (min-width: @tablet-width) {
+        @rules();
+    }
+}
+
+.desktop-width (@rules) {
+    @media (min-width: @desktop-width) {
+        @rules();
+    }
+}
+
+.content-container {
+    width: 260px;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    .tablet-width({
+        width: 668px;
+        padding: 0 50px;
+    });
+
+    .desktop-width({
+        width: 1050px;
+        padding: 0 50px;
+    });
+}
+

@@ -1,23 +1,30 @@
 /* stylelint-disable */
 .page-header {
-    width: 320px;
+    display: flex;
+    flex-direction: column;
+
     margin: 0 auto;
 
     outline: 1px solid grey;
     background-color: #fff;
+
+    .content-container;
 }
 
 .page-header__logo-link {
-  height: 80px;
+    height: 80px;
+
+         @media (min-width: @tablet-width) {
+           width: 334px;
+           order: 1;
+        }
+         @media (min-width: @desktop-width) {
+            order: 2;
+
+        }
 }
 
-@media (min-width: @tablet-width) {
-    display: flex;
-}
 
-@media (min-width: @desktop-width) {
-
-}
 
 .main-header__title {
     font-size: 27px;

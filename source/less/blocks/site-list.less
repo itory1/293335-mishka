@@ -1,4 +1,27 @@
 /* stylelint-disable */
 .site-list {
     outline: 1px solid black;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: row;
+        order: 3;
+    }
+    @media (min-width: @desktop-width) {
+        display: flex;
+
+        width: 400px;
+
+        flex-wrap: wrap;
+        order: 1;
+    }
+}
+
+.site-list__item {
+    &--mobile-hidden {
+        display: none;
+        @media (min-width: @desktop-width) {
+            display: block;
+        }
+    }
 }
