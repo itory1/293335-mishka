@@ -1,0 +1,33 @@
+.catalogue-video {
+    .content-container;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @desktop-width) {
+        flex-direction: row;
+    }
+}
+
+.catalogue-video__title {
+@media (min-width: @tablet-width) {
+        order:2;
+    }
+}
+
+.catalogue-video__video {
+@media (min-width: @tablet-width) {
+        order:1;
+    }
+}
+
+.catalogue-video__text {
+@media (min-width: @tablet-width) {
+        order:3;
+    }
+}
+
+.catalogue-video__button {
+@media (min-width: @tablet-width) {
+        order:4;
+    }
+}
+
