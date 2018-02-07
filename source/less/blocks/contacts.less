@@ -2,10 +2,15 @@
 .contacts {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     outline: 1px solid orange;
 
     .content-container;
+    @media (min-width: @desktop-width) {
+         height: 500px;
+    }
+
 }
 
 
@@ -18,3 +23,46 @@
     color: @color-text-title;
 }
 
+.contacts__container {
+   @media (min-width: @desktop-width) {
+        order:1;
+    }
+}
+
+.contacts__table {
+  display: table;
+   @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: row;
+    }
+    @media (min-width: @desktop-width) {
+        flex-direction: column;
+    }
+}
+
+.contacts__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: table-row;
+}
+
+.contacts__cell {
+  display: table-cell;
+}
+
+.contacts__map {
+   @media (min-width: @desktop-width) {
+        width: 500px;
+        height: 500px;
+        order: 3;
+      }
+}
+
+.contacts__write {
+
+ @media (min-width: @desktop-width) {
+margin-top: auto;
+        order: 2;
+      }
+    }

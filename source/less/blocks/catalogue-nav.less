@@ -9,11 +9,11 @@
     background-color: #f9f9f9;
     background-image: url('../img/hero-mobile@1x.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     @media (min-width: @tablet-width) {
         width: 100%;
         height: 750px;
 
-        .content-container;
     }
 }
 
@@ -21,7 +21,8 @@
     display: flex;
     flex-direction: column;
 
-    margin: auto 0;
+    .content-container;
+    margin-top: auto;
     padding: 0;
 
     list-style: none;
@@ -41,7 +42,7 @@
 }
 
 .catalogue-nav__item {
-    margin: auto 0;
+    margin: auto -50px;
 
     text-decoration: none;
     &--interior {
@@ -52,6 +53,7 @@
     }
     @media (min-width: @tablet-width) {
         flex-grow: 1;
+        margin: auto 0;
     }
 }
 
