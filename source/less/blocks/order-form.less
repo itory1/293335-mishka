@@ -6,6 +6,7 @@
 .order-form__wrap {
     display: flex;
     flex-direction: column;
+
     flex-wrap: wrap;
 
     &--color {
@@ -16,17 +17,18 @@
 }
 
 .order-form__block--color {
-  width: 300px;
-  @media (min-width: @desktop-width) {
-            width: 300px;
-        }
+    width: 300px;
+    @media (min-width: @desktop-width) {
+        width: 300px;
+    }
 }
 
 .order-form__bottom {
-  display: flex;
-  flex-direction: column;
-   @media (min-width: @tablet-width) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @tablet-width) {
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
 }

@@ -1,130 +1,138 @@
 /* stylelint-disable */
 .weekly-item {
+    display: flex;
+    flex-direction: column;
+
     padding-top: 28px;
 
     outline: 1px solid blue;
 
     .content-container;
-    display: flex;
-    flex-direction: column;
 }
 
 .weekly-item__header {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  @media (min-width: @tablet-width)  {
-    flex-direction: row;
-    margin-bottom: 38px;
-  }
+    @media (min-width: @tablet-width) {
+        flex-direction: row;
 
-  @media (min-width: @desktop-width)  {
-    margin-bottom: 35px;
+        margin-bottom: 38px;
+    }
 
-    transform: translateY(159px);
-  }
+    @media (min-width: @desktop-width) {
+        margin-bottom: 35px;
+
+        transform: translateY(159px);
+    }
 }
 
 .weekly-item__tag {
-  margin-bottom: 24px;
+    font-weight: bold;
+    line-height: 16px;
 
-  font-weight: bold;
-  line-height: 16px;
-  color: @cyan;
-  text-transform: uppercase;
+    margin-bottom: 24px;
 
-  @media (min-width: @tablet-width)  {
-    width: 125px;
-    margin-top: 12px;
+    text-transform: uppercase;
 
-    text-align: center;
-  }
+    color: @cyan;
 
-  @media (min-width: @desktop-width)  {
-    margin-top: 15px;
-    padding-right: 25px;
-    padding-left: 21px;
-    //width: 125px;
-  }
+    @media (min-width: @tablet-width) {
+        width: 125px;
+        margin-top: 12px;
+
+        text-align: center;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-top: 15px;
+        padding-right: 25px;
+        padding-left: 21px;
+        //width: 125px;
+    }
 }
 
 
 
 .weekly-item__title {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+
     margin: 0;
-  margin-bottom: 7px;
-  padding: 0;
+    margin-bottom: 7px;
+    padding: 0;
 
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  color: @color-text-title;
+    color: @color-text-title;
 
-  @media (min-width: @tablet-width)  {
-    flex-grow: 1;
-    width: 540px;
+    @media (min-width: @tablet-width) {
+        font-size: 43px;
+        line-height: 50px;
 
-    font-size: 43px;
-    line-height: 50px;
-  }
+        width: 540px;
 
-  @media (min-width: @desktop-width)  {
-    order: 1;
+        flex-grow: 1;
+    }
 
-    font-size: 53px;
-    line-height: 57px;
-  }
+    @media (min-width: @desktop-width) {
+        font-size: 53px;
+        line-height: 57px;
+
+        order: 1;
+    }
 }
 
 .weekly-item__content {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 404px;
-  }
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: column;
 
-  @media (min-width: @desktop-width) {
-    height: 636px;
-    padding-left: 175px;
-  }
+        height: 404px;
+
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+        height: 636px;
+        padding-left: 175px;
+    }
 }
 
 .weekly-item__description {
-  margin: 0;
-  margin-bottom: 17px;
+    font-size: 15px;
+    line-height: 24px;
 
-  font-size: 15px;
-  line-height: 24px;
+    margin: 0;
+    margin-bottom: 17px;
 
-  @media (min-width: @tablet-width) {
-    width: 292px;
+    @media (min-width: @tablet-width) {
+        font-size: 17px;
+        line-height: 30px;
 
-    font-size: 17px;
-    line-height: 30px;
+        width: 292px;
+    }
 
-  }
-
- @media (min-width: @desktop-width) {
-    margin-bottom: 49px;
-    padding-top: 165px;
-}
+    @media (min-width: @desktop-width) {
+        margin-bottom: 49px;
+        padding-top: 165px;
+    }
 }
 
 .weekly-item__image {
- width: 260px;
-  height: 316px;
-  margin-bottom: 25px;
+    width: 260px;
+    height: 316px;
+    margin-bottom: 25px;
 
-  @media (min-width: @tablet-width)  {
-    order: 2;
-    width: 333px;
-    height: 404px;
-  }
+    @media (min-width: @tablet-width) {
+        width: 333px;
+        height: 404px;
 
-  @media (min-width: @desktop-width) {
-    width: 525px;
-    height: 636px;
-  }
+        order: 2;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 525px;
+        height: 636px;
+    }
 }
