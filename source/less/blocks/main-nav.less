@@ -1,99 +1,99 @@
 /* stylelint-disable */
 .main-nav {
-    position: relative;
+	position: relative;
 
-    outline: 1px dotted red;
+	outline: 1px dotted red;
 }
 
 .main-nav__toggle {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
 
-    display: block;
+	display: block;
 
-    width: 80px;
-    height: 80px;
+	width: 80px;
+	height: 80px;
 
-    cursor: pointer;
+	cursor: pointer;
 
-    border: none;
-    background-color: #ccc;
+	border: none;
+	background-color: #ccc;
 
-    @media (min-width: @tablet-width) {
-        display: none;
-    }
+	@media (min-width: @tablet-width) {
+		display: none;
+	}
 }
 
 .main-nav--closed .main-nav__toggle::before {
-    position: absolute;
-    top: 15px;
-    left: 17px;
+	position: absolute;
+	top: 15px;
+	left: 17px;
 
-    width: 36px;
-    height: 2px;
+	width: 36px;
+	height: 2px;
 
-    content: '';
+	content: '';
 
-    background-color: #000;
-    box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+	background-color: #000;
+	box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-    background-color: rgba(255, 255, 255, .3);
-    box-shadow: 0 8px 0 0 rgba(255, 255, 255, .3), 0 16px 0 0 rgba(255, 255, 255, .3);
+	background-color: rgba(255, 255, 255, .3);
+	box-shadow: 0 8px 0 0 rgba(255, 255, 255, .3), 0 16px 0 0 rgba(255, 255, 255, .3);
 }
 
 .main-nav--opened .main-nav__toggle {
-    top: 0;
-    right: 0;
+	top: 0;
+	right: 0;
 
-    &::before,
-    &::after {
-        position: absolute;
-        top: 24px;
-        left: 18px;
+	&::before,
+	&::after {
+		position: absolute;
+		top: 24px;
+		left: 18px;
 
-        width: 36px;
-        height: 2px;
+		width: 36px;
+		height: 2px;
 
-        content: '';
+		content: '';
 
-        background-color: #000;
-    }
+		background-color: #000;
+	}
 
-    &::before {
-        transform: rotate(45deg);
+	&::before {
+		transform: rotate(45deg);
 
-        box-shadow: none;
-    }
+		box-shadow: none;
+	}
 
-    &::after {
-        transform: rotate(-45deg);
-    }
+	&::after {
+		transform: rotate(-45deg);
+	}
 
-    &:active::before,
-    &:active::after {
-        background-color: rgba(255, 255, 255, .3);
-    }
+	&:active::before,
+	&:active::after {
+		background-color: rgba(255, 255, 255, .3);
+	}
 }
 
 .main-nav__wrapper {
-    display: flex;
+	display: flex;
 
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 
 
 .main-nav__delivery-text {
-    display: none;
-    @media (min-width: @tablet-width) {
-        display: block;
+	display: none;
+	@media (min-width: @tablet-width) {
+		display: block;
 
-        margin-left: auto;
+		margin-left: auto;
 
-        order: 4;
-    }
+		order: 4;
+	}
 }
