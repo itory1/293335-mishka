@@ -1,4 +1,36 @@
 /* stylelint-disable */
+
 .order-form {
-    outline: 1px solid grey;
+  outline: 1px solid grey;
+}
+
+.order-form__wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  &--color {
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+    }
+  }
+}
+
+.order-form__block--color {
+  width: 200px;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.order-form__bottom {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.order-form__container {
+  .content-container;
 }
