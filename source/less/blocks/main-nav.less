@@ -75,13 +75,16 @@
 .main-nav__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main-nav__delivery-text {
   display: none;
   @media (min-width: @tablet-width) {
     display: block;
+    margin: 0;
     margin-left: auto;
+
     order: 4;
   }
 }
