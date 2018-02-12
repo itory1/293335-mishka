@@ -10,9 +10,10 @@
     display: flex;
     flex-direction: row;
     order: 3;
+    width: 400px;
+
   }
   @media (min-width: @desktop-width) {
-    display: flex;
     width: 400px;
     flex-wrap: wrap;
     order: 1;
@@ -20,10 +21,19 @@
 }
 
 .site-list__item {
+  @media (min-width: @desktop-width) {
+
+   height: 89px;
+   display: flex;
+   align-items: center;
+  }
   &--mobile-hidden {
     display: none;
+    height: 100%;
     @media (min-width: @desktop-width) {
       display: block;
+      margin-top: auto;
+
     }
   }
 }
@@ -37,7 +47,13 @@
   color: #000;
   border-top: 1px solid #ccc;
   @media (min-width: @tablet-width) {
+    font-size: 15px;
     border: none;
+    padding: 0 35px 0 0 ;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+
   }
 }
 
@@ -50,3 +66,5 @@
     background-color: #6a4d38;
   }
 }
+
+
