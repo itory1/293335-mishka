@@ -9,6 +9,10 @@
     display: flex;
     flex-direction: row;
     order: 2;
+    width: 398px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -16,14 +20,12 @@
   }
 }
 
-.user-list__search,
-.user-list__basket {
+.user-list__item--search,
+.user-list__item--basket {
   font-size: 17px;
   line-height: 24px;
-  display: block;
+  display: flex;
   padding: 30px 30px 30px 76px;
-  text-decoration: none;
-  color: #000000;
   border-top: 1px solid #cccccc;
 
   @media (min-width: @tablet-width) {
@@ -33,6 +35,9 @@
 }
 
 .user-list a[href] {
+  text-decoration: none;
+  color: #000000;
+
   &:hover {
     background-color: #755a46;
   }
@@ -43,32 +48,47 @@
   }
 }
 
-.user-list__basket {
+.user-list__item--basket {
   position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 317px;
-    padding: 32px 0 32px 85px;
+    justify-content: flex-end;
   }
 
-  .user-list__search-basket {
+  a {
+    @media (min-width: @tablet-width) {
+      padding-left: 80px;
+    }
+  }
+
+  .user-list__basket-icon {
     position: absolute;
     top: 34px;
     left: 51px;
     width: 16px;
     height: 16px;
     opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      position: static;
+      margin: auto;
+    }
   }
 }
 
-.user-list__search {
+.user-list__link {
+  display: flex;
+}
+
+.user-list__item--search {
   position: relative;
 
   @media (min-width: @tablet-width) {
     width: 80px;
-    height: 80px;
+    height: 89px;
     border-right: 1px solid #cccccc;
     border-left: 1px solid #cccccc;
+    justify-content: center;
   }
 
   .user-list__search--hidden {
@@ -84,5 +104,10 @@
     width: 16px;
     height: 16px;
     opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      position: static;
+      margin: auto;
+    }
   }
 }
