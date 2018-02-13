@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -13,6 +14,7 @@
     align-items: center;
     padding-bottom: 30px;
   }
+
   @media (min-width: @desktop-width) {
     order: 3;
   }
@@ -25,6 +27,7 @@
   display: flex;
   padding: 30px 30px 30px 76px;
   border-top: 1px solid #cccccc;
+
   @media (min-width: @tablet-width) {
     padding: 0;
     border-top: none;
@@ -34,9 +37,11 @@
 .user-list a[href] {
   text-decoration: none;
   color: #000000;
+
   &:hover {
     background-color: #755a46;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #6a4d38;
@@ -45,15 +50,16 @@
 
 .user-list__item--basket {
   position: relative;
+
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
   }
 
   a {
     @media (min-width: @tablet-width) {
-    padding-left: 80px;
+      padding-left: 80px;
+    }
   }
-}
 
   .user-list__basket-icon {
     position: absolute;
@@ -62,6 +68,7 @@
     width: 16px;
     height: 16px;
     opacity: 0.3;
+
     @media (min-width: @tablet-width) {
       position: static;
       margin: auto;
@@ -69,34 +76,38 @@
   }
 }
 
-  .user-list__link {
-    display: flex;
+.user-list__link {
+  display: flex;
+}
+
+.user-list__item--search {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 89px;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    justify-content: center;
   }
 
-  .user-list__item--search {
-    position: relative;
+  .user-list__search--hidden {
     @media (min-width: @tablet-width) {
-      width: 80px;
-      height: 89px;
-      border-right: 1px solid #cccccc;
-      border-left: 1px solid #cccccc;
-      justify-content: center;
-    }
-    .user-list__search--hidden {
-      @media (min-width: @tablet-width) {
-        display: none;
-      }
-    }
-    .user-list__search-icon {
-      position: absolute;
-      top: 34px;
-      left: 51px;
-      width: 16px;
-      height: 16px;
-      opacity: 0.3;
-      @media (min-width: @tablet-width) {
-        position: static;
-        margin: auto;
-      }
+      display: none;
     }
   }
+
+  .user-list__search-icon {
+    position: absolute;
+    top: 34px;
+    left: 51px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      position: static;
+      margin: auto;
+    }
+  }
+}

@@ -2,53 +2,39 @@
 
 .reviews {
   position: relative;
-
   padding-top: 28px;
-
   &:before {
     content: "";
     position: absolute;
     bottom: -51px;
-
     width: 100%;
     height: 7px;
-
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: 320px 7px;
   }
-
   @media (min-width: @tablet-width) {
     margin-bottom: 80px;
     padding-top: 78px;
-
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
-
     &:before {
       bottom: -86px;
-
       height: 17px;
-
       background-size: 768px 17px;
     }
-
   }
-
   @media (min-width: @desktop-width) {
     padding-top: 7px;
-
     background: none;
-
     &:before {
       top: auto;
       bottom: -89px;
-
       height: 23px;
-
-      background-size: 1150px 23px;;
+      background-size: 1150px 23px;
+      ;
     }
   }
 }
@@ -57,7 +43,6 @@
   display: flex;
   flex-direction: column;
   .content-container;
-
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -75,30 +60,22 @@
   }
 }
 
-
-
-
 .reviews__title {
   margin: 0;
   margin-bottom: 24px;
-
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: @color-text-title;
-
   @media (min-width: @tablet-width) {
     flex-grow: 1;
     width: 334px;
     margin-bottom: 0;
-
     font-size: 43px;
     line-height: 50px;
   }
-
   @media (min-width: @desktop-width) {
     margin-top: 0;
-
     font-size: 53px;
     line-height: 57px;
   }
@@ -107,15 +84,12 @@
 .reviews__text {
   margin: 0;
   padding: 0;
-
   font-size: 15px;
   line-height: 30px;
-
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
   }
-
   @media (min-width: @desktop-width) {
     width: 775px;
   }
@@ -124,7 +98,7 @@
 .reviews__item {
   @media (min-width: @tablet-width) {
     margin: 0;
-  margin-top: 46px;
+    margin-top: 46px;
   }
 }
 
@@ -146,19 +120,15 @@
 .reviews__author {
   display: block;
   margin-top: 26px;
-
   font-weight: bold;
   font-size: 18px;
   color: @color-text-title;
   font-style: normal;
-
   @media (min-width: @tablet-width) {
     order: 3;
     margin-top: 58px;
-
     font-size: 17px;
   }
-
   @media (min-width: @desktop-width) {
     flex-basis: 350px;
     margin-top: 36px;
@@ -174,7 +144,6 @@
   line-height: 30px;
   vertical-align: baseline;
   color: @grey;
-
   @media (min-width: @tablet-width) {
     display: block;
   }
@@ -185,7 +154,6 @@
     order: 1;
     width: 175px;
   }
-
   @media (min-width: @desktop-width) {
     margin-top: 10px;
   }
@@ -195,18 +163,14 @@
   height: 52px;
   margin-top: 30px;
   margin-bottom: 38px;
-
   font-size: 0;
-
   @media (min-width: @tablet-width) {
     order: 4;
     width: 167px;
     margin-top: -60px;
     margin-left: auto;
   }
-
-
-    /* @media (min-width: @tablet-width) {
+  /* @media (min-width: @tablet-width) {
     width: 167px;
     order: 4;
     margin-left: auto;
@@ -217,34 +181,27 @@
 .reviews__toggle {
   width: 50%;
   height: 52px;
-
   background-color: #ffffff;
   border: 1px solid #ececec;
   cursor: pointer;
-
   &--prev {
     background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-right: 0;
   }
-
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
-
   &:hover {
     opacity: 0.6;
   }
-
   &:active {
     opacity: 0.3;
   }
-
   @media (min-width: @tablet-width) {
     border: 0;
   }
 }
-
