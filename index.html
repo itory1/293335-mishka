@@ -16,7 +16,11 @@
             </button>
             <div class="main-nav__wrapper">
                 <a class="page-header__logo-link" href="#">
-                    <img class="page-header__logo" src="source/img/logo-mobile.svg" width="90" height="35" alt="Магазин «Мишка»">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="source/img/logo-desktop.svg">
+                      <source media="(min-width: 768px)" srcset="source/img/logo-tablet.svg">
+                      <img src="source/img/logo-mobile.svg" alt="Мишка">
+                      </picture>
                 </a>
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
@@ -105,7 +109,13 @@
                         </td>
                     </tr>
                 </table>
-                <img class="weekly-item__image" src="http://placehold.it/150x100" width="" height="" alt="Вязаные корзинки">
+                <div class="weekly-item__image">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="source/img/triple-set-desktop@1x.jpg 1x, source/img/triple-set-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="source/img/triple-set-tablet@1x.jpg 1x, source/img/triple-set-desktop@2x.jpg 2x">
+                    <img src="source/img/triple-set-mobile@1x.jpg" srcset="source/img/triple-set-tablet@2x.jpg 2x" alt="Вязаные корзинки" width="260" height="315">
+                  </picture>
+                 </div>
                 <span>990 руб.</span>
                 <a class="weekly-item__button button">Заказать</a>
             </div>

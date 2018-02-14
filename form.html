@@ -16,7 +16,11 @@
             </button>
             <div class="main-nav__wrapper">
                 <a class="page-header__logo-link" href="#">
-                    <img class="page-header__logo" src="source/img/logo-mobile.svg" width="90" height="35" alt="Магазин «Мишка»">
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="source/img/logo-desktop.svg">
+                          <source media="(min-width: 768px)" srcset="source/img/logo-tablet.svg">
+                          <img src="source/img/logo-mobile.svg" alt="Мишка">
+                          </picture>
                 </a>
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
@@ -60,7 +64,9 @@
     </header>
   <main class="page-main">
     <div class="order">
+      <div class="order__background-color">
       <h1 class="order__title">Вязание на заказ</h1>
+      </div>
       <div class="order-form__container">
         <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
           детали.
