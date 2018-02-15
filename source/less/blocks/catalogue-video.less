@@ -142,3 +142,43 @@
     margin: 0;
   }
 }
+
+.catalogue-video__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 101px;
+  height: 77px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @tablet-width) {
+    top: 51%;
+
+    transform: translate(-50%, -49%);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 50%;
+    left: 51%;
+
+    transform: translate(-49%, -50%);
+  }
+
+  &:hover {
+    transform: scale(1.2) translate(-40%, -40%);
+  }
+
+  &:active {
+    transform: scale(0.8) translate(-60%, -60%);
+    opacity: 0.3;
+  }
+
+}
