@@ -78,9 +78,9 @@
   .content-container;
   margin-bottom: 35px;
 
-  &:last-of-type {
+ /*  &:last-of-type {
     margin-bottom: 32px;
-  }
+  } */
 
   &--name {
     margin-bottom: 32px;
@@ -109,9 +109,9 @@
       .content-container;
     }
 
-    &:last-of-type {
+   /*  &:last-of-type {
       margin-bottom: 26px;
-    }
+    } */
   }
 
   @media (min-width: @desktop-width)  {
@@ -125,7 +125,9 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 42px;
-
+    display: flex;
+    flex-wrap: nowrap;
+    width: 815px;
     &--small {
       display: flex;
       flex-wrap: wrap;
@@ -144,24 +146,26 @@
     &--box {
       margin-top: 50px;
 
-      .content-container;
+
     }
+
+
   }
 
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
-    width: 926px;
+
 
     &--gray {
       width: auto;
     }
 
     &--small {
-      padding-left: 112px;
+      padding-left: 0;
     }
 
     &--box {
-      padding-left: 112px;
+      padding-left: 0;
     }
   }
 }
@@ -188,6 +192,10 @@
       flex-basis: 262px;
     }
   }
+}
+
+.order-form__controls--gray {
+  background-color: #444444;
 }
 
 .order-form__block--color {
@@ -601,4 +609,66 @@
 
 .order-form__text:-ms-input-placeholder {
   .placeholder-text;
+}
+
+.order-form__inner {
+  position: relative;
+
+  &--phone {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    //align-items: baseline;
+    margin: 0;
+
+    .content-container;
+
+    &--phone {
+      padding-top: 46px;
+    }
+
+    &--mail {
+      padding-bottom: 28px;
+    }
+  }
+}
+
+.order-form__inner--phone .order-form__text {
+  height: 56px;
+}
+
+.order-form__inner--phone .order-form__text {
+  height: 56px;
+}
+
+.order-form__inner svg {
+  position: absolute;
+  top: 34px;
+  right: 6px;
+}
+
+.order-form__inner--phone svg {
+  @media (min-width: @tablet-width) {
+    top: 62px;
+    right: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    //right: 232px;
+    right: 22.8%;
+  }
+}
+
+.order-form__inner--mail svg {
+  @media (min-width: @tablet-width) {
+    top: 15px;
+    right: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    //right: 229px;
+    right: 22.7%;
+  }
 }

@@ -11,7 +11,7 @@
     order: 2;
     width: 398px;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 30px;
   }
 
@@ -39,18 +39,17 @@
   color: #000000;
 
   &:hover {
-    background-color: #755a46;
+    opacity: 0.6;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #6a4d38;
+    opacity: 0.3;
   }
 }
 
 .user-list__item--basket {
   position: relative;
-
+height: 89px;
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
   }
@@ -78,6 +77,8 @@
 
 .user-list__link {
   display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .user-list__item--search {
