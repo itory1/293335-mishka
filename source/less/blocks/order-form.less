@@ -602,3 +602,65 @@
 .order-form__text:-ms-input-placeholder {
   .placeholder-text;
 }
+
+.order-form__inner {
+  position: relative;
+
+  &--phone {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    //align-items: baseline;
+    margin: 0;
+
+    .content-container;
+
+    &--phone {
+      padding-top: 46px;
+    }
+
+    &--mail {
+      padding-bottom: 28px;
+    }
+  }
+}
+
+.order-form__inner--phone .order-form__text {
+  height: 56px;
+}
+
+.order-form__inner--phone .order-form__text {
+  height: 56px;
+}
+
+.order-form__inner svg {
+  position: absolute;
+  top: 34px;
+  right: 6px;
+}
+
+.order-form__inner--phone svg {
+  @media (min-width: @tablet-width) {
+    top: 62px;
+    right: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    //right: 232px;
+    right: 22.8%;
+  }
+}
+
+.order-form__inner--mail svg {
+  @media (min-width: @tablet-width) {
+    top: 15px;
+    right: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    //right: 229px;
+    right: 22.7%;
+  }
+}
