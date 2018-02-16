@@ -19,21 +19,6 @@
   }
 }
 
-.site-list__item {
-  @media (min-width: @desktop-width) {
-    height: 89px;
-    display: flex;
-    align-items: center;
-  }
-  &--mobile-hidden {
-    display: none;
-    height: 100%;
-    @media (min-width: @desktop-width) {
-      display: block;
-      margin-top: auto;
-    }
-  }
-}
 
 .site-list a {
   font-size: 17px;
@@ -52,6 +37,27 @@
     font-size: 17px;
   }
 }
+
+.site-list__item {
+  @media (min-width: @desktop-width) {
+    height: 89px;
+    display: flex;
+    align-items: center;
+  }
+  &--mobile-hidden {
+    display: none;
+    height: 100%;
+    @media (min-width: @desktop-width) {
+      display: block;
+      margin-top: auto;
+    a {
+      font-size: 15px;
+      padding-top: 30px;
+    }
+    }
+  }
+}
+
 
 .site-list a[href]{
   &:hover {
