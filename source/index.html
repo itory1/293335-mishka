@@ -65,8 +65,9 @@
     </nav>
   </header>
   <main class="page-main">
+    <div class="page-main__container">
     <section class="catalogue-nav">
-      <h1 class="catalogue-nav__title">Милые штуки ручной работы для дома</h1>
+      <h1 class="catalogue-nav__title">Милые штуки ручной работы&nbsp;для дома</h1>
       <div class="catalogue-nav__categories">
         <a class="catalogue-nav__link catalogue-nav__link--interior">
           <span class="catalogue-nav__align-center catalogue-nav__align-center--interior">Предметы
@@ -189,6 +190,7 @@
       </div>
       <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
+  </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -264,27 +266,27 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal--open">
+    <div class="modal__title">Добавить в корзину</div>
+    <p class="modal__description">Выберите размер:</p>
+    <form class="to-cart" action="#" method="get">
+      <div class="to-cart__sizes">
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="s-size" type="radio" name="size" value="s" checked>
+          <label class="to-cart__label" for="s-size">S</label>
+        </p>
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="m-size" type="radio" name="size" value="m">
+          <label class="to-cart__label" for="m-size">M</label>
+        </p>
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="l-size" type="radio" name="size" value="l">
+          <label class="to-cart__label" for="l-size">L</label>
+        </p>
+      </div>
+      <button class="to-cart__submit btn" type="submit">Добавить</button>
+    </form>
+  </div>
 </body>
-<div class="modal modal--open">
-  <div class="modal__title">Добавить в корзину</div>
-  <p class="modal__description">Выберите размер:</p>
-  <form class="to-cart" action="#" method="get">
-    <div class="to-cart__sizes">
-      <p class="to-cart__size">
-        <input class="to-cart__radio" id="s-size" type="radio" name="size" value="s" checked>
-        <label class="to-cart__label" for="s-size">S</label>
-      </p>
-      <p class="to-cart__size">
-        <input class="to-cart__radio" id="m-size" type="radio" name="size" value="m">
-        <label class="to-cart__label" for="m-size">M</label>
-      </p>
-      <p class="to-cart__size">
-        <input class="to-cart__radio" id="l-size" type="radio" name="size" value="l">
-        <label class="to-cart__label" for="l-size">L</label>
-      </p>
-    </div>
-    <button class="to-cart__submit btn" type="submit">Добавить</button>
-  </form>
-</div>
 
 </html>

@@ -118,7 +118,7 @@
                 <label class="order-form__label order-form__label--checkbox" for="orange">Оранжевый</label>
               </div>
             </div>
-            <div>
+          </div>
         </fieldset>
         <fieldset class="order-form__controls order-form__controls--name">
           <div class="order-form__container order-form__container--name">
@@ -137,7 +137,7 @@
                 <input class="order-form__text" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете">
               </div>
             </div>
-            <div>
+          </div>
         </fieldset>
         <div class="order-form__controls order-form__controls--gray">
         <div class="order-form__container order-form__container--phone">
@@ -161,7 +161,7 @@
           <div class="order-form__block  order-form__block--box">
 
               <label class="order-form__caption order-form__caption--box">Доп</label>
-              <textarea class="order-form__text order-form__text--box" type="text" name="phone" value="" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="order-form__text order-form__text--box" name="phone" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
 
@@ -245,28 +245,30 @@
           </svg>
           HTML Academy</a>
       </div>
-  </footer>
-</body>
-<div class="modal modal--open">
-  <div class="modal__title">Добавить в корзину</div>
-  <p class="modal__description">Выберите размер:</p>
-  <form class="to-cart" action="#" method="get">
-    <div class="to-cart__sizes">
-      <p class="to-cart__size">
-        <input class="to-cart__radio" id="s-size" type="radio" name="size" value="s" checked>
-        <label class="to-cart__label" for="s-size">S</label>
-      </p>
-      <p class="to-cart__size">
-        <input class="to-cart__radio" id="m-size" type="radio" name="size" value="m">
-        <label class="to-cart__label" for="m-size">M</label>
-      </p>
-      <p class="to-cart__size">
-        <input class="to-cart__radio" id="l-size" type="radio" name="size" value="l">
-        <label class="to-cart__label" for="l-size">L</label>
-      </p>
     </div>
-    <button class="to-cart__submit btn" type="submit">Добавить</button>
-  </form>
-</div>
+  </footer>
+  <div class="modal modal--open">
+    <div class="modal__title">Добавить в корзину</div>
+    <p class="modal__description">Выберите размер:</p>
+    <form class="to-cart" action="#" method="get">
+      <div class="to-cart__sizes">
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="s-size" type="radio" name="size" value="s" checked>
+          <label class="to-cart__label" for="s-size">S</label>
+        </p>
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="m-size" type="radio" name="size" value="m">
+          <label class="to-cart__label" for="m-size">M</label>
+        </p>
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="l-size" type="radio" name="size" value="l">
+          <label class="to-cart__label" for="l-size">L</label>
+        </p>
+      </div>
+      <button class="to-cart__submit btn" type="submit">Добавить</button>
+    </form>
+  </div>
+</body>
+
 
 </html>

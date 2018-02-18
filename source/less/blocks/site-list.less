@@ -13,7 +13,7 @@
     width: 400px;
   }
   @media (min-width: @desktop-width) {
-    width: 400px;
+    width: 440px;
     flex-wrap: wrap;
     order: 1;
   }
@@ -43,6 +43,12 @@
     height: 89px;
     display: flex;
     align-items: center;
+    margin-right: 30px;
+    &:first-of-type {
+      border-right: 1px solid #f1f1f1;
+
+    }
+
   }
   &--mobile-hidden {
     display: none;
@@ -52,7 +58,7 @@
       margin-top: auto;
     a {
       font-size: 15px;
-      padding-top: 30px;
+      padding-top: 15px;
     }
     }
   }
